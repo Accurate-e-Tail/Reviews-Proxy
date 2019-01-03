@@ -2,35 +2,23 @@
 <html>
     <head>
         <title>Amazon</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="http://localhost:3001/1/style.css">
+        <link rel="stylesheet" href="http://localhost:3004/1/style.css">
+        <link rel="stylesheet" href="http://localhost:3003/styles.css">
         <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     </head>
     <body>
-      <div id="Search"></div>
-      <div id="Item"></div>
+      <div id="navigation-bar" class="navigation-bar"></div>
+      <div class="grid">
+      <div id="product-overview"></div>
       <div id="Checkout"></div>
-      <div id="Reviews"></div>
-      <script src="http://localhost:3001"></script>
-      <script src="http://localhost:3002"></script>
-      <script src="http://localhost:3003"></script>
-      <script src="http://localhost:3004"></script>
-        <script>
-            ReactDOM.render(
-                React.createElement(Search),
-                document.getElementById("Search")
-            );
-            ReactDOM.render(
-                React.createElement(Item),
-                document.getElementById("Item")
-            );
-            ReactDOM.render(
-                React.createElement(Checkout),
-                document.getElementById("Checkout")
-            );
-            ReactDOM.render(
-                React.createElement(Reviews),
-                document.getElementById("Reviews")
-            );
-        </script>
+      </div>
+      <div id="Reviews" style="display: block"></div>
+      <script src="http://localhost:3002/1/bundle.js"></script>
+      <script src="http://localhost:3001/1/bundle.js"></script>
+      <script src="http://localhost:3004/1/bundle.js"></script>
+      <script src="http://localhost:3003/app.bundle.js"></script>
     </body>
 </html>

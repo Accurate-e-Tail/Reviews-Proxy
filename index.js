@@ -4,6 +4,6 @@ const Port = 3000;
 
 const app = Express();
 
-app.use(Express.static(Path.join(__dirname, 'public')));
+app.use('/:productId', Express.static(Path.join(__dirname, 'public')));
 
 app.listen(Port, () => { console.log('listening on port ' + Port)});
